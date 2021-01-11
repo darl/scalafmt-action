@@ -4,7 +4,6 @@ inputs:
   workdir:
     description: "Working directory relative to the root directory."
     default: "."
-outputs:
 runs:
   using: "docker"
   image: "Dockerfile"

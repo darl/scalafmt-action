@@ -8,6 +8,6 @@ fi
 echo "Current dir: $(pwd)"
 echo "Current dir listing:\n$(ls -la)"
 
-/scalafmt --mode "${INPUT_MODE}" --config "${INPUT_CONFIG}" .
+/scalafmt --mode "${INPUT_MODE}" --diff-branch "${GITHUB_BASE_REF}" --config "${INPUT_CONFIG}" .
 
 git status

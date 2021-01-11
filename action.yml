@@ -4,6 +4,12 @@ inputs:
   workdir:
     description: "Working directory relative to the root directory."
     default: "."
+  config:
+    description: "A file path to .scalafmt.conf"
+    default: ".scalafmt.conf"
+  mode:
+    description: "Sets the files to be formatted fetching mode (diff or changed)"
+    default: "diff"
 runs:
   using: "docker"
   image: "Dockerfile"
